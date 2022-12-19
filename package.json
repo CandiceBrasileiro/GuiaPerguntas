@@ -1,0 +1,29 @@
+{
+  "name": "guiaperguntas",
+  "version": "1.0.0",
+  "description": "Plataforma de perguntas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CandiceBrasileiro/GuiaPerguntas.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "Js"
+  ],
+  "author": "Candice",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CandiceBrasileiro/GuiaPerguntas/issues"
+  },
+  "homepage": "https://github.com/CandiceBrasileiro/GuiaPerguntas#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
