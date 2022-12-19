@@ -3,19 +3,15 @@ const app = express();
 
 // Usar o ejs como view engine
 app.set('view engine', 'ejs');
+// Carregar arquivos estáticos
+app.use(express.static('public'));
 
-app.get("/:nome/:lang", (req, res) => {
-  var nome = req.params.nome;
-  var lang = req.params.lang;
-  var exibirMsg = false;
-
-  res.render("index", {
-    nome: nome,
-    lang: lang,
-    empresa: "Guia do programador",
-    inscritos: 8000,
-    msg: exibirMsg
-  });
+app.get("/", (req, res) => {
+  res.render("index");
 });
+
+app.get("/perguntar", (req, res) => {
+  res.render("perguntar");
+})
 
 app.listen(8080,()=>{console.log("App rodando!")});
